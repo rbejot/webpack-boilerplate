@@ -1,8 +1,6 @@
-module.exports = {
-  url: "http://my-website.com",
-  language: "en",
-  title: "Marche",
-  description: "Description",
-  image: "main-image.png",
-  large_image: "large-image.png"
-}
+export const url = "http://my-website.com";
+export const language = "en";
+export const title = "Marche";
+export const description = "Description";
+export const image = "main-image.png";
+export const large_image = "large-image.png";
