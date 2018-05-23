@@ -1,8 +1,3 @@
----
-
-
----
-
 <h2 id="webpack-boilerplate">Webpack boilerplate</h2>
 <p>This boilerplate was made to develop quickly new ideas.</p>
 <p>It helps:</p>
