@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const metatag = require('./metatag.js')
 
 module.exports = {
   entry: { main: './src/index.js' },
@@ -37,7 +38,13 @@ module.exports = {
       inject: false,
       hash: true,
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      url: metatag.url,
+      title: metatag.title,
+      language: metatag.language,
+      description: metatag.description,
+      image: metatag.image,
+      large_image: metatag.large_image
     }),
     new WebpackMd5Hash()
   ]
